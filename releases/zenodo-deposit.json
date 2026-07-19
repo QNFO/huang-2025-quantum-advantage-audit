@@ -1,0 +1,127 @@
+{
+  "created": "2026-07-19T11:11:20.170961+00:00",
+  "modified": "2026-07-19T11:11:20.470291+00:00",
+  "id": 21440671,
+  "conceptrecid": "21440670",
+  "doi": "10.5281/zenodo.21440671",
+  "conceptdoi": "10.5281/zenodo.21440670",
+  "doi_url": "https://doi.org/10.5281/zenodo.21440671",
+  "metadata": {
+    "title": "The Vast World of Quantum Advantage \u2014 A Full-Spectrum Audit",
+    "doi": "10.5281/zenodo.21440671",
+    "publication_date": "2026-07-19",
+    "description": "Full-spectrum audit of Huang, Choi, McClean &amp; Preskill (2025) \"The vast world of quantum advantage\" (arXiv:2508.05720). This paper subjects both the Huang et al. five-keystone framework and QNFO's own prior critiques to symmetric scrutiny. Key findings: Theorem 1 is the most sophisticated challenge to QNFO's epistemic posture yet produced; QNFO has five documented vulnerabilities including the \"Shor's Assumptions\" gap; maximum convergence on core values but irreducible uncertainty on implications. Includes a 9-stage Bayesian cascade analysis, a 12-entry calibration register (2027-2035), and a diversified portfolio recommendation.",
+    "access_right": "open",
+    "creators": [
+      {
+        "name": "QNFO Research Collective",
+        "affiliation": "QNFO"
+      }
+    ],
+    "keywords": [
+      "quantum computing",
+      "quantum advantage",
+      "BPP vs BQP",
+      "quantum error correction",
+      "pseudo-advantage",
+      "falsifiability",
+      "research audit",
+      "Bayesian cascade",
+      "technology assessment"
+    ],
+    "related_identifiers": [
+      {
+        "identifier": "https://github.com/QNFO/huang-2025-quantum-advantage-audit",
+        "relation": "isSupplementedBy",
+        "scheme": "url"
+      },
+      {
+        "identifier": "https://arxiv.org/abs/2508.05720",
+        "relation": "cites",
+        "scheme": "url"
+      },
+      {
+        "identifier": "10.5281/zenodo.21299278",
+        "relation": "cites",
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.21255346",
+        "relation": "cites",
+        "scheme": "doi"
+      },
+      {
+        "identifier": "10.5281/zenodo.21356016",
+        "relation": "cites",
+        "scheme": "doi"
+      }
+    ],
+    "version": "1.0",
+    "license": "cc-by-4.0",
+    "imprint_publisher": "Zenodo",
+    "notes": "IPFS CID: bafkreicck636twkoxr3ztznmgxskigyxkteqnvchturyk5nygupotdicgi",
+    "upload_type": "publication",
+    "publication_type": "article",
+    "prereserve_doi": {
+      "doi": "10.5281/zenodo.21440671",
+      "recid": 21440671
+    }
+  },
+  "title": "The Vast World of Quantum Advantage \u2014 A Full-Spectrum Audit",
+  "links": {
+    "self": "https://zenodo.org/api/records/21440671",
+    "html": "https://zenodo.org/records/21440671",
+    "doi": "https://doi.org/10.5281/zenodo.21440671",
+    "parent_doi": "https://doi.org/10.5281/zenodo.21440670",
+    "badge": "https://zenodo.org/badge/doi/10.5281%2Fzenodo.21440671.svg",
+    "conceptbadge": "https://zenodo.org/badge/doi/10.5281%2Fzenodo.21440670.svg",
+    "files": "https://zenodo.org/api/records/21440671/files",
+    "bucket": "https://zenodo.org/api/files/3cae6624-a8a5-4730-a8b0-8113e3afac9f",
+    "latest_draft": "https://zenodo.org/api/deposit/depositions/21440671",
+    "latest_draft_html": "https://zenodo.org/deposit/21440671",
+    "publish": "https://zenodo.org/api/deposit/depositions/21440671/actions/publish",
+    "edit": "https://zenodo.org/api/deposit/depositions/21440671/actions/edit",
+    "discard": "https://zenodo.org/api/deposit/depositions/21440671/actions/discard",
+    "newversion": "https://zenodo.org/api/deposit/depositions/21440671/actions/newversion",
+    "record": "https://zenodo.org/api/records/21440671",
+    "record_html": "https://zenodo.org/record/21440671",
+    "latest": "https://zenodo.org/api/records/21440671/versions/latest",
+    "latest_html": "https://zenodo.org/records/21440671/latest"
+  },
+  "record_id": 21440671,
+  "owner": 1328013,
+  "files": [
+    {
+      "id": "a75229db-49be-4134-8656-d1a200e41fe7",
+      "filename": "PROVENANCE-BUNDLE.zip",
+      "filesize": 3344212,
+      "checksum": "f3a950ec15d0fe41dca873c5c40c3f2a",
+      "links": {
+        "self": "https://zenodo.org/api/records/21440671/files/a75229db-49be-4134-8656-d1a200e41fe7",
+        "download": "https://zenodo.org/api/records/21440671/draft/files/PROVENANCE-BUNDLE.zip/content"
+      }
+    },
+    {
+      "id": "af4b630b-9845-44b8-bfd3-bb00362cc910",
+      "filename": "paper.md",
+      "filesize": 17322,
+      "checksum": "28300576e8ca235e8999005f1cc84552",
+      "links": {
+        "self": "https://zenodo.org/api/records/21440671/files/af4b630b-9845-44b8-bfd3-bb00362cc910",
+        "download": "https://zenodo.org/api/records/21440671/draft/files/paper.md/content"
+      }
+    },
+    {
+      "id": "bfefddc1-da14-4a0c-86cd-7d4f292f43f0",
+      "filename": "README.md",
+      "filesize": 956,
+      "checksum": "c243249c95eeb8ea7c6b06dbe7e5eea5",
+      "links": {
+        "self": "https://zenodo.org/api/records/21440671/files/bfefddc1-da14-4a0c-86cd-7d4f292f43f0",
+        "download": "https://zenodo.org/api/records/21440671/draft/files/README.md/content"
+      }
+    }
+  ],
+  "state": "done",
+  "submitted": true
+}
