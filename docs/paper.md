@@ -1,4 +1,4 @@
----
+﻿---
 title: "The Vast World of Quantum Advantage — A Full-Spectrum Audit"
 subtitle: "Critical engagement with Huang, Choi, McClean & Preskill (2025) and QNFO's quantum computing critique — with Deep-Research Re-assessment (§4.1)"
 author: "QNFO Research Collective"
@@ -111,6 +111,10 @@ This correction was made two days before this audit's initial analysis and four 
 
 **Revised severity:** HIGH → MINOR (ALREADY CORRECTED). This vulnerability is stale.
 
+**Red-Team Correction (2026-07-19):** A cross-reference check reveals that while the KG contains a Correction node (`correction-economic-narrative`, status: `applied`, 2026-07-17) acknowledging that the $35B/0-machines claim "was misleading: excludes D-Wave and IonQ revenue via selective definition of 'general-purpose.' Corrected to 'selective market exclusion'" — the canonical Manifesto text in D1 still contains the uncorrected language in its Preamble: "Not one commercially viable quantum computer exists." The correction was applied to KG metadata but not propagated to the source document. Any reader of the Manifesto encounters the uncorrected claim. The initial downgrade to MINOR overstated the completeness of the correction.
+
+**Revised severity (red-team adjusted):** HIGH → MODERATE. Correction acknowledged in KG but not applied to canonical source text. QNFO knows the claim is misleading; readers don't.
+
 ### Fifth (Revisited): Missing Self-Falsification Conditions
 
 **Initial assessment:** QNFO demands falsifiability from others but has not published symmetric conditions for its own claims.
@@ -132,6 +136,10 @@ This correction was made two days before this audit's initial analysis and four 
 
 **Revised severity:** CRITICAL → MINOR–MODERATE. QNFO practices self-falsification operationally more than it documents it formally. The audit's criticism of asymmetric demand (falsifiability for others, not self) remains valid, but the claim that QNFO "has not published falsification conditions for its own claims" is overstated given the evidence of active self-correction.
 
+**Red-Team Correction (2026-07-19):** A comprehensive search of KG, D1, and Vectorize for a consolidated self-falsification statement — "QNFO's central claims would be disconfirmed if we observed X" — found zero documents of this kind. The Manifesto's Falsification Pledge (Principle 4) applies to *institutions* seeking funding, not to QNFO as a research collective. The Disconfirming Registry tracks 5 anti-Adelic findings but does not state positive disconfirmation criteria for QNFO's portfolio recommendation, the QEC thermodynamic argument, or the ontological critique of the qubit model. The 5 applied corrections are reactive (post-hoc error correction) rather than pre-registered falsification conditions. This distinction matters: catching errors after publication is not the same as specifying in advance what evidence would refute a claim.
+
+**Revised severity (red-team adjusted):** MINOR–MODERATE → MODERATE. Operational self-falsification practice is genuine and robust. Formal, consolidated, pre-registered self-falsification documentation does not exist. The Manifesto creates an asymmetry that is real, not merely formal — it demands of others what it does not provide for itself at equivalent specificity.
+
 ### Summary: Revised Vulnerability Assessment
 
 | # | Vulnerability | Initial Severity | Revised Severity | Key Evidence |
@@ -139,9 +147,12 @@ This correction was made two days before this audit's initial analysis and four 
 | V1 | Ontological overreach | HIGH | MODERATE | Scaffold-invariant framework more nuanced than credited |
 | V2 | QEC overhead qualitative | HIGH | HIGH (STANDS) | No computed joules-per-solution threshold |
 | V3 | Shor's Assumptions gap | CRITICAL | MODERATE | 3 KG findings exist; D1 body missing |
-| V4 | $35B definitional | HIGH | MINOR | QNFO already corrected (2026-07-17) |
-| V5 | Missing self-falsification | CRITICAL | MINOR–MODERATE | Active self-correction registry; asymmetric Falsification Pledge |
+| V4 | $35B definitional | HIGH | MODERATE↑ | KG correction applied but NOT to source text |
+| V5 | Missing self-falsification | CRITICAL | MODERATE↑ | Active correction registry; no consolidated doc |
 | **NEW** | Portfolio allocation | — | CORRECTION | QNFO allocates 5–10% to FTQC, not 0% |
+| **CROSS** | D1 body truncation | — | SYSTEMIC | ≥3 D1 papers truncated; corrections not propagated to source docs |
+
+> ↑ = Upgraded by red-team review 2026-07-19. Initial deep-research downgrade was too generous.
 
 # 5. Huang et al.'s Limitations
 
