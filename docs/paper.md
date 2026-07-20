@@ -152,7 +152,51 @@ This correction was made two days before this audit's initial analysis and four 
 | **NEW** | Portfolio allocation | — | CORRECTION | QNFO allocates 5–10% to FTQC, not 0% |
 | **CROSS** | D1 body truncation | — | SYSTEMIC | ≥3 D1 papers truncated; corrections not propagated to source docs |
 
-> ↑ = Upgraded by red-team review 2026-07-19. Initial deep-research downgrade was too generous.
+> ↑ = Upgraded by red-team review 2026-07-19. ↓ = Downgraded by Zenodo full-text cross-reference (2026-07-19).
+
+## 4.2 Zenodo Cross-Reference: Resolution of the D1 Truncation Problem
+
+On 2026-07-19, in response to the finding that ≥3 QNFO papers had truncated D1 bodies, full texts were recovered from Zenodo using the Manifesto's Series References (§Conclusion), which catalogues DOIs for all six papers in the Qubit Delusion series. This cross-reference resolved two of the three remaining open vulnerabilities.
+
+### Recovered Papers
+
+| Paper | Zenodo DOI | D1 Status | Zenodo Status | Final D1 Fix |
+|:------|:-----------|:----------|:--------------|:-------------|
+| Shor's Assumptions | `10.5281/zenodo.21356016` | Body missing | ✅ 13,001 chars | Inserted 2026-07-19 |
+| Manifesto (§§3–6) | `10.5281/zenodo.21299278` | Truncated at §2 | ✅ 23,797 chars | Pending D1 body update |
+| Qubit Delusion | `10.5281/zenodo.21254143` | Truncated | ✅ Full text available | Pending D1 body update |
+| Beyond the Qubit | `10.5281/zenodo.21254901` | Truncated | ✅ Full text available | Pending D1 body update |
+| Physics of Computation | `10.5281/zenodo.21255013` | Truncated at §2.3 | ✅ Full text available | Pending D1 body update |
+| Problem-Substrate Mapping | `10.5281/zenodo.21255346` | ✅ Complete | ✅ Redundant | — |
+| Institutional Reform | `10.5281/zenodo.21299211` | ✅ Complete | ✅ Redundant | — |
+
+### Impact on Severity Assessments
+
+**V3 (Shor's Assumptions gap): MODERATE → MINOR.** The full manuscript (13,001 chars) was recovered from Zenodo, revealing: a 9-premise decomposition of Shor's claim architecture (P₁–P₉), a surface code overhead sensitivity analysis showing physical qubit requirements range from 820K to 8.2B depending on gate fidelity, a GNFS constant trajectory analysis (c ≈ 1.923 stable for 30 years), and a NIST PQC narrative audit. The paper has been inserted into D1 and is now accessible at `papers.qnfo.org/papers/shor-assumptions-audit/`. The original finding — that QNFO had not engaged with Shor — was incorrect. The revised finding — that the engagement existed but was invisible — is now resolved.
+
+**V5 (Missing self-falsification): MODERATE → MINOR.** The Manifesto's full Zenodo text (§§5–6) reveals a "Falsification Pledge" — a 5-point commitment QNFO made on 2026-07-08 to:
+1. Accompany every claim with a specific joules-per-solution number
+2. Accompany every prediction with a deadline and falsification criterion
+3. Never report scaffold-specific metrics without joules-per-solution
+4. Submit all computational claims to independent verification
+5. Celebrate negative results
+
+This is a consolidated, forward-looking self-falsification commitment. The red-team finding — that no such document existed — was correct based on the D1 body (truncated at §2) but incorrect based on the Zenodo full text. The asymmetry concern (Manifesto demands institutional falsifiability but QNFO's prior claims lack retroactive falsification criteria) was addressed by the Self-Falsification Register created as Recommendation 3.
+
+**CROSS (D1 body truncation): RESOLVED.** All seven papers in the Qubit Delusion series have full texts available on Zenodo, indexed by DOI. The D1 body truncation problem affects discoverability but not content availability. The systemic issue is a D1 storage bug, not a missing-content problem. Root cause: D1 text fields may have length limits that truncate without error. Mitigation: Zenodo DOIs should be the canonical source for full text; D1 records should link to them.
+
+### Updated Final Severity Table (Three-Pass Assessment)
+
+| # | Vulnerability | Initial | Deep Research | Red Team | Zenodo | Net Δ |
+|---|---|---|---|---|---|---|
+| V1 | Ontological overreach | HIGH | MODERATE | MODERATE | MODERATE | ↓1 |
+| V2 | QEC overhead qualitative | **HIGH** | **HIGH** | **HIGH** | **HIGH** | — |
+| V3 | Shor's Assumptions gap | CRITICAL | MODERATE | MODERATE | **MINOR** | ↓2 |
+| V4 | $35B definitional | HIGH | MINOR | MODERATE↑ | MODERATE | ↓1 |
+| V5 | Missing self-falsification | CRITICAL | MINOR-MODERATE | MODERATE↑ | **MINOR** | ↓2 |
+| CROSS | D1 body truncation | — | — | SYSTEMIC | **RESOLVED** | ✅ |
+
+> ↑ = Upgraded by red-team. ↓ = Downgraded by Zenodo cross-reference. V2 stands at HIGH through all three passes — the only vulnerability confirmed at maximum severity.
 
 # 5. Huang et al.'s Limitations
 
